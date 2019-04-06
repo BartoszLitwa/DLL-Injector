@@ -39,6 +39,8 @@ namespace WindowsFormsApp1
                         break;
                 case DllInjectionResult.Success:
                         MessageBox.Show("Injected");
+                        if (ExitAfterInjectionCheck.Checked)
+                            Environment.Exit(1);
                         break;
                 default:
                     break;

@@ -34,6 +34,7 @@
             this.DLLPathTXT = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.ExitAfterInjectionCheck = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // InjectButton
@@ -93,12 +94,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ExitAfterInjectionCheck
+            // 
+            this.ExitAfterInjectionCheck.AutoSize = true;
+            this.ExitAfterInjectionCheck.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ExitAfterInjectionCheck.Location = new System.Drawing.Point(94, 92);
+            this.ExitAfterInjectionCheck.Name = "ExitAfterInjectionCheck";
+            this.ExitAfterInjectionCheck.Size = new System.Drawing.Size(110, 17);
+            this.ExitAfterInjectionCheck.TabIndex = 7;
+            this.ExitAfterInjectionCheck.Text = "Exit after Injection";
+            this.ExitAfterInjectionCheck.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.ClientSize = new System.Drawing.Size(200, 122);
+            this.Controls.Add(this.ExitAfterInjectionCheck);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DLLPathTXT);
@@ -107,6 +120,7 @@
             this.Controls.Add(this.InjectButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CRNYY\'s Injector";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,6 +135,7 @@
         private System.Windows.Forms.TextBox DLLPathTXT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox ExitAfterInjectionCheck;
     }
 }
 
